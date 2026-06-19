@@ -11,3 +11,6 @@ scripts/optimize-manifest.json
 _tmp_check/
 assets/images/Album*/
 assets/images/Cập nhật*/
+
+# Local Netlify folder
+.netlify
