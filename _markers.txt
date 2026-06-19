@@ -1,0 +1,9 @@
+13:   1. Dán block BEGIN HTML vào trang đích.
+14:   2. Dán block BEGIN CSS vào stylesheet (hoặc &lt;style&gt;).
+15:   3. Dán block BEGIN JS (nếu có) — chạy sau DOM ready.
+27:     /* ── BEGIN CSS (reviews) ── */
+1862:     /* ── END CSS ── */
+1874:   <!-- ── BEGIN HTML (reviews) ── -->
+1943:   <!-- ── END HTML ── -->
+1946:     /* ── BEGIN JS (reviews) ── */
+2565:     /* ── END JS ── */

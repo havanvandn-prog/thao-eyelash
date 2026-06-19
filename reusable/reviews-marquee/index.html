@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews Marquee · Thao Eyelash</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Jost:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section id="reviews" class="reviews-section">
+        <div class="container">
+            <header class="reviews-section-header">
+                <span class="section-tag">GUEST REVIEWS</span>
+                <h2 class="reviews-section-title">What Our Guests Say</h2>
+                <p class="reviews-section-desc">Proudly rated <strong>4.9/5 stars</strong> by over <strong>1,000+</strong> international travelers.</p>
+            </header>
+
+            <div class="reviews-layout">
+                <div class="reviews-map-wrap">
+                    <a
+                        class="reviews-map-link"
+                        href="https://www.google.com/maps/search/Thao+Eyelash+Da+Nang"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Read Thao Eyelash Da Nang reviews on Google Maps"
+                    >
+                        <img
+                            class="reviews-map-img"
+                            src="../../assets/images/reviews-google-maps.png"
+                            alt="Thao Eyelash Da Nang on Google Maps — 4.9 stars, guest reviews"
+                            width="640"
+                            height="720"
+                            loading="lazy"
+                            decoding="async"
+                        />
+                    </a>
+                </div>
+                <div class="reviews-marquee-shell">
+                    <div class="reviews-marquee" aria-label="Guest reviews carousel" aria-roledescription="carousel">
+                        <div class="reviews-track" id="reviews-track"></div>
+                    </div>
+                </div>
+            </div>
+
+            <dialog class="review-dialog" id="review-dialog" aria-labelledby="review-dialog-title">
+                <button type="button" class="review-dialog__nav review-dialog__nav--prev" data-review-dialog-prev aria-label="Previous review">&#10094;</button>
+                <button type="button" class="review-dialog__nav review-dialog__nav--next" data-review-dialog-next aria-label="Next review">&#10095;</button>
+                <div class="review-dialog__inner">
+                    <button type="button" class="review-dialog__close" data-close-review-dialog aria-label="Close review">&times;</button>
+                    <header class="review-dialog__header">
+                        <span class="review-avatar review-dialog__avatar" id="review-dialog-title"></span>
+                        <div class="review-meta">
+                            <strong class="review-dialog__name"></strong>
+                            <span class="stars stars--outline review-dialog__stars"></span>
+                        </div>
+                    </header>
+                    <div class="review-dialog__text-wrap">
+                        <div class="review-dialog__text"></div>
+                        <p class="review-dialog__scroll-hint" hidden>
+                            <span class="review-dialog__scroll-hint-icon" aria-hidden="true">↓</span>
+                            Scroll to read more
+                        </p>
+                    </div>
+                    <div class="review-dialog__actions" hidden>
+                        <button type="button" class="review-dialog__translate" data-review-dialog-translate>Read in English</button>
+                    </div>
+                    <div class="review-dialog__photos" hidden></div>
+                </div>
+                <div class="review-lightbox" id="review-lightbox" role="dialog" aria-modal="true" aria-label="Review photo" hidden>
+                    <button type="button" class="review-lightbox__backdrop" data-close-lightbox tabindex="-1" aria-hidden="true"></button>
+                    <figure class="review-lightbox__figure">
+                        <button type="button" class="review-lightbox__close" data-close-lightbox aria-label="Close photo">&times;</button>
+                        <img class="review-lightbox__img" src="" alt="" />
+                        <figcaption class="review-lightbox__caption"></figcaption>
+                    </figure>
+                </div>
+            </dialog>
+        </div>
+    </section>
+
+    <script src="reviews-marquee.js" defer></script>
+</body>
+</html>

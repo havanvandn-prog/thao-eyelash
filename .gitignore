@@ -1,0 +1,13 @@
+node_modules/
+.env
+.env.*
+dist/
+build/
+.DS_Store
+__pycache__/
+.codegraph/
+scripts/node_modules/
+scripts/optimize-manifest.json
+_tmp_check/
+assets/images/Album*/
+assets/images/Cập nhật*/
