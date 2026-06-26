@@ -1,6 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17761267492"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'AW-17761267492');
+    </script>
+    <!-- Microsoft Clarity -->
+    <script type="text/javascript">
+        (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "xcx5h15qhk");
+    </script>
+    <script>
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.getRegistrations().then(function (regs) {
+          regs.forEach(function (reg) { reg.unregister(); });
+        });
+        if ("caches" in window) {
+          caches.keys().then(function (keys) {
+            keys.filter(function (key) { return key.indexOf("thao-eyelash-") === 0; }).forEach(function (key) {
+              caches.delete(key);
+            });
+          });
+        }
+      }
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thao Eyelash | Premium Lash Extensions & Artistry</title>
@@ -22,7 +53,7 @@
     <meta name="twitter:image" content="https://eyelashdanang.com/assets/images/og-share.jpg">
     <!-- LCP hero images -->
     <link rel="preload" as="image" href="assets/images/nhan-vat-hero-desktop.webp?v=20260619a" media="(min-width: 901px)" fetchpriority="high">
-    <link rel="preload" as="image" href="assets/images/nhan-vat-mobile-2.webp?v=20260619a" media="(max-width: 900px)" fetchpriority="high">
+    <link rel="preload" as="image" href="assets/images/_test_mobile.webp?v=20260625b" media="(max-width: 900px)" fetchpriority="high">
     <link rel="preload" as="image" href="assets/images/logo.webp?v=20260619a">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,7 +62,7 @@
     <link rel="preload" href="https://fonts.gstatic.com/s/cormorantgaramond/v21/co3bmX5slCNuHLi8bLeY9MK7whWMhyjYpntKgS4.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="https://fonts.gstatic.com/s/jost/v20/92zatBhPNqw73oTd4g.woff2" as="font" type="font/woff2" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Jost:wght@200;300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css?v=20260619a">
+    <link rel="stylesheet" href="style.css?v=20260626c">
     <style>
         /* Critical: scroll-reveal for below-fold sections */
         .js .fade-in-up,
@@ -142,7 +173,7 @@
             </div>
             <div class="hero-v2-image-container">
                 <picture>
-                    <source media="(max-width: 900px)" srcset="assets/images/nhan-vat-mobile-2.webp?v=20260619a" type="image/webp">
+                    <source media="(max-width: 900px)" srcset="assets/images/_test_mobile.webp?v=20260625b" type="image/webp">
                     <img
                         src="assets/images/nhan-vat-hero-desktop.webp?v=20260619a"
                         alt="Thao Eyelash lash extension model"
@@ -261,11 +292,11 @@
                         <div class="service-feature-card__compare" aria-label="Lash lift before and after">
                             <figure class="service-compare-item">
                                 <span class="service-compare-tag">Before</span>
-                                <img src="assets/images/services/lash-lift-before.webp?v=20260619a" alt="Lash lift before treatment" loading="lazy" decoding="async" width="800" height="726">
+                                <img src="assets/images/services/lash-lift-before.webp?v=20260626c" alt="Lash lift before treatment" loading="lazy" decoding="async" width="1024" height="929">
                             </figure>
                             <figure class="service-compare-item">
                                 <span class="service-compare-tag">After</span>
-                                <img src="assets/images/services/lash-lift-after.webp?v=20260619a" alt="Lash lift after treatment" loading="lazy" decoding="async" width="800" height="726">
+                                <img src="assets/images/services/lash-lift-after.webp?v=20260626c" alt="Lash lift after treatment" loading="lazy" decoding="async" width="1024" height="929">
                             </figure>
                         </div>
                         <div class="service-feature-card__body">
@@ -290,11 +321,11 @@
                         <div class="service-feature-card__compare" aria-label="Brow lamination before and after">
                             <figure class="service-compare-item">
                                 <span class="service-compare-tag">Before</span>
-                                <img src="assets/images/services/brow-lamination-before.webp?v=20260619a" alt="Brow lamination before treatment" loading="lazy" decoding="async" width="482" height="443">
+                                <img src="assets/images/services/brow-lamination-before.webp?v=20260626c" alt="Brow lamination before treatment" loading="lazy" decoding="async" width="482" height="443">
                             </figure>
                             <figure class="service-compare-item">
                                 <span class="service-compare-tag">After</span>
-                                <img src="assets/images/services/brow-lamination-after.webp?v=20260619a" alt="Brow lamination after treatment" loading="lazy" decoding="async" width="482" height="443">
+                                <img src="assets/images/services/brow-lamination-after.webp?v=20260626c" alt="Brow lamination after treatment" loading="lazy" decoding="async" width="482" height="443">
                             </figure>
                         </div>
                         <div class="service-feature-card__body">
@@ -312,7 +343,7 @@
         <!-- Why Travelers Choose Section -->
         <section id="why-choose" class="why-choose-section">
             <div class="why-choose-image">
-                <img src="assets/images/why-choose-lash.webp?v=20260619a" alt="Close-up eyelash extensions at Thao Eyelash Da Nang" class="why-choose-img" width="800" height="565" loading="lazy" decoding="async">
+                <img src="assets/images/why-choose-lash.webp?v=20260626a" alt="Close-up eyelash extensions at Thao Eyelash Da Nang" class="why-choose-img" width="1024" height="723" loading="lazy" decoding="async">
             </div>
             <div class="why-choose-content">
                 <div class="why-choose-inner">
@@ -657,9 +688,11 @@
     <script src="reviews-data.js?v=20260610f" defer></script>
     <script src="reviews-marquee.js?v=20260619a" defer></script>
     <script src="services-slider.js?v=20260619a" defer></script>
-    <script src="booking-form.js?v=20260619a" defer></script>
+    <script src="traffic-source.js?v=20260625m" defer></script>
+    <script src="google-ads-conversions.js?v=20260625m" defer></script>
+    <script src="booking-form.js?v=20260625m" defer></script>
     <script src="legal-dialog.js" defer></script>
     <script src="instagram-dm.js?v=20260612a" defer></script>
-    <script src="script.js?v=20260619a" defer></script>
+    <script src="script.js?v=20260625d" defer></script>
 </body>
 </html>
